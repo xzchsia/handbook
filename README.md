@@ -1,4 +1,4 @@
-# ceph-handbook
-ceph document
+# handbook
+document
 
 these files are collected from network
