@@ -4,7 +4,7 @@
 ### Failed to resolve: junit:junit:4.12，Failed to resolve: javax.inject:javax.inject:1......
 
 
-###问题：
+### 问题：
 Android Studio用gradle编译是版本3.3，在离线（Office Mode）的状态下新建一个项目时出现以下错误：
 
 >	> Error: Failed to resolve: junit:junit:4.12
@@ -51,7 +51,7 @@ Android Studio用gradle编译是版本3.3，在离线（Office Mode）的状态�
 
 
 ### 原因及解决方法：
-**原因很简单，单纯的网络连接问题。解决办法就是将不需要的library去掉，将以下代码展示的库依赖去掉，重新编译即可。**
+*原因很简单，单纯的网络连接问题。解决办法就是将不需要的library去掉，将以下代码展示的库依赖去掉，重新编译即可。*
 
 	compile fileTree(dir: 'libs', include: ['*.jar'])
 	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -61,9 +61,12 @@ Android Studio用gradle编译是版本3.3，在离线（Office Mode）的状态�
 
 ### 在 stackoverflow中找到相应的解答：
 
- [stackoverflow中类似的解决方法][1]
+ [stackoverflow中类似的解决方法][fix1]
 
- [1]: http://stackoverflow.com/questions/40396765/android-studio-v2-2-2-error27-17-failed-to-resolve-junitjunit4-12 "Markdown"
 
-所以啊，遇到错误千万莫方，Android如今发展的太成熟了，你遇到的错误别人肯定遇到过，百度谷歌一下，你就get。
+遇到相关类似的问题，多Google，多Baidu，一定会找到类似的解决办法。
+
+
+
+ [fix1]: http://stackoverflow.com/questions/40396765/android-studio-v2-2-2-error27-17-failed-to-resolve-junitjunit4-12 "Markdown"
 
