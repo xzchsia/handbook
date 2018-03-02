@@ -51,6 +51,7 @@
 
 ## 原因及解决方法：
 原因很简单，单纯的网络连接问题。解决办法就是将不需要的library去掉，将以下代码展示的库依赖去掉，重新编译即可。
+
 	*compile fileTree(dir: 'libs', include: ['*.jar'])
 	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
 		exclude group: 'com.android.support', module: 'support-annotations'
