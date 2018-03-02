@@ -7,14 +7,13 @@
 ### 问题：
 Android Studio用gradle编译是版本3.3，在离线（Office Mode）的状态下新建一个项目时出现以下错误：
 
->	> Error: Failed to resolve: junit:junit:4.12
->	> Failed to resolve: javax.inject:javax.inject:1
->	> Failed to resolve: javax.annotation:javax.annotation-api:1.2
->	> Failed to resolve: com.google.code.findbugs:jsr305:2.0.1
->	> Failed to resolve: org.hamcrest:hamcrest-library:1.3
->	> Failed to resolve: org.hamcrest:hamcrest-integration:1.3
->	> Failed to resolve: com.squareup:javawriter:2.1.1
-
+> Error: Failed to resolve: junit:junit:4.12
+> Failed to resolve: javax.inject:javax.inject:1
+> Failed to resolve: javax.annotation:javax.annotation-api:1.2
+> Failed to resolve: com.google.code.findbugs:jsr305:2.0.1
+> Failed to resolve: org.hamcrest:hamcrest-library:1.3
+> Failed to resolve: org.hamcrest:hamcrest-integration:1.3
+> Failed to resolve: com.squareup:javawriter:2.1.1
 
 
 ### app中build.gradle文件：
