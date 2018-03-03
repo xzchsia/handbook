@@ -52,11 +52,17 @@ Android Studio用gradle编译是版本3.3，在离线（Office Mode）的状态�
 ### 原因及解决方法：
 *原因很简单，单纯的网络连接问题。解决办法就是将不需要的library去掉，将以下代码展示的库依赖去掉，重新编译即可。*
 
+    dependencies {} 内部的  
 	compile fileTree(dir: 'libs', include: ['*.jar'])  
 	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {  
 		exclude group: 'com.android.support', module: 'support-annotations'  
 	})  
 	testCompile 'junit:junit:4.12'  
+	
+	以及 android {} 内部的  
+	
+	testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"  
+
 
 ### 在 stackoverflow中找到相应的解答：
 
