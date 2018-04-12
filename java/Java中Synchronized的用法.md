@@ -368,8 +368,8 @@ class Child extends Parent {
 2.	构造方法不能使用synchronized关键字，但可以使用synchronized代码块来进行同步。   
 
 ________________________________________
-
-## 修饰一个静态的方法  
+ 
+## 修饰一个静态的方法    
 
 Synchronized也可修饰一个静态方法，用法如下：  
 ```java  
